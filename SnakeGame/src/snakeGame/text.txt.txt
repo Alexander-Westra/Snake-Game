@@ -1,0 +1,2 @@
+Welcome to the Snake Game!
+You are the green snake, use the arrow keys to navigate and try to eat the yellow fruits

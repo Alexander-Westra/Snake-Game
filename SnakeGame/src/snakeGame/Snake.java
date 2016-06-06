@@ -21,17 +21,17 @@ public class Snake extends Cell
 	
 	//private int[][] xCoord = new int[50][50];
 	public Snake() {
-		super(Color.GREEN);
+		super(Color.YELLOW);
 		dir = 3;
 		spd = 1;
 	}
 	public Snake(int in) {
-		super(Color.GREEN);
+		super(Color.YELLOW);
 		dir = in;
 		spd = 1;
 	}
 	public Snake(int a, int b) {
-		super(a, b, Color.GREEN);
+		super(a, b, Color.YELLOW);
 		dir = 3;
 		spd = 1;
 	}

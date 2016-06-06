@@ -56,21 +56,25 @@ public class SnakeGUI extends Canvas implements KeyListener, Runnable {
 		if(keys[0] == true)
 		{
 			snek.setDir(2);
+			//snek.turn();
 			//move left
 		}
 		if(keys[1] == true)
 		{
 			snek.setDir(3);
+			//snek.turn();
 			//move right
 		}
 		if(keys[2] == true)
 		{
 			snek.setDir(0);
+			//snek.turn();
 			//move up
 		}
 		if(keys[3] == true)
 		{
 			snek.setDir(1);
+			//snek.turn();
 			//move down
 		}
 		

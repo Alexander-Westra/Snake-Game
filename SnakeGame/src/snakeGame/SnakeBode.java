@@ -31,8 +31,11 @@ private int tmpy;
 	}
 	public void setDir(int a) {
 		dir = a;
-		tmpx =bode.get(0).getX();
+		tmpx = bode.get(0).getX();
 		tmpy = bode.get(0).getY();
+		if (bode.get(ct).getX() == tmpx && bode.get(ct).getY() == tmpy && ct < bode.size()- 1&& ct >0)
+			bode.get(ct-1).setDir(a);
+		
 	}
 	public void turn() {
 		bode.get(ct).setDir(dir);

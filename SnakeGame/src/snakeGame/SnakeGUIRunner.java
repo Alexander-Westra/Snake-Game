@@ -1,7 +1,11 @@
 package snakeGame;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 import java.awt.Component;
+import java.io.File;
+import java.io.IOException;
 
 public class SnakeGUIRunner extends JFrame{
 
@@ -12,6 +16,7 @@ public class SnakeGUIRunner extends JFrame{
 		{
 			super("Snake Game");
 			setSize(WIDTH, HEIGHT);
+			JOptionPane.showMessageDialog(this, "Welcome to Snake", "Snake", JOptionPane.PLAIN_MESSAGE);
 
 			SnakeGUI theGame = new SnakeGUI();
 			((Component)theGame).setFocusable(true);
@@ -20,6 +25,7 @@ public class SnakeGUIRunner extends JFrame{
 
 			setVisible(true);
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
+			
 		}
 
 		public static void main( String args[] )
